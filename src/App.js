@@ -1,5 +1,5 @@
 import React, {useRef} from 'react'
-import './app.css'
+import './App.css'
 import { heroCarouselImages } from './image-constants.js'
 import Navbar from './components/navbar.jsx'
 import Carousel from './components/carousel.jsx'
