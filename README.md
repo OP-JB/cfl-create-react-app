@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# CFL Specialty Services
+
+Website for Central Florida Specialty Services
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

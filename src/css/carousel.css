@@ -1,0 +1,22 @@
+.carousel-container img {
+  width: 100%;
+}
+
+h1 {
+  color: #fff;
+  position: absolute;
+  font-size: 5em;
+  font-weight: lighter;
+  width: 700px;
+  top: 700px;
+}
+
+.carousel-img-0,
+.carousel-img-1 {
+  right: 0px;
+}
+
+.carousel-img-2,
+.carousel-img-3 {
+  left: 80px;
+}
