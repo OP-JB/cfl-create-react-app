@@ -1,5 +1,8 @@
 import React, {useState, useEffect} from 'react'
 import '../css/navbar.css'
+import logoIcon from '../assets/img/CFL-logo.png';
+import mobileLogoIcon from '../assets/img/CFL-logo_mobile.png';
+import menuIcon from '../assets/img/hamburger-menu.png';
 
 const Navbar = ({scrollToSection}) => {
   const [mobileNavIsVisible, setMobileNavIsVisible] = useState(false)
@@ -27,8 +30,8 @@ const Navbar = ({scrollToSection}) => {
   return (
     <div className="nav-container">
       <nav>
-        <img id="logo" src="assets/img/CFL-logo.png" />
-        <img id="mobile-logo" src="assets/img/CFL-logo_mobile.png" />
+        <img id="logo" src={logoIcon} />
+        <img id="mobile-logo" src={mobileLogoIcon} />
         <span id="slogan">Crating and third-party solutions</span>
         <div className="nav-links-container">
           <span onClick={() => scrollToSection(0)}>Services</span>
@@ -36,7 +39,7 @@ const Navbar = ({scrollToSection}) => {
           <span onClick={() => scrollToSection(2)}>Contact</span>
           <span onClick={() => scrollToSection(3)}>Gallery</span>
         </div>
-        <img src='assets/img/hamburger-menu.png' className='mobile-nav-icon' onClick={toggleMobileNav} />
+        <img src={menuIcon} className='mobile-nav-icon' onClick={toggleMobileNav} />
         {mobileNavIsVisible && (
           <div className='mobile-nav-menu'>
             <div className="mobile-nav-links-container">

@@ -22,7 +22,7 @@ const Gallery = forwardRef(({scrollToTop}, ref) => {
   return (
     <div className='gallery-container' ref={ref}>
       <h4 onClick={openModal}>View Gallery</h4>
-      <img className='placeholder-img' src="assets/img/gallery/1.jpg" />
+      <img className='placeholder-img' src={galleryCarouselImages[0]} />
         {modalIsOpen && (
           <Fragment>
             <div className='modal-overlay'></div>
