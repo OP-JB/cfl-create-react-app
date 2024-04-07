@@ -1,6 +1,7 @@
 .contact-info {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 75%;
   margin: 20px auto 40px;
   text-align: center;

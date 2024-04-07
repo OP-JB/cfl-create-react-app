@@ -11,7 +11,7 @@ const Carousel = ({images, autoPlay}) => {
       }, 8000);
       return () => clearInterval(intervalId)
     }
-  }, [currentIndex]);
+  }, [currentIndex, autoPlay, images.length]);
 
   const goToPreviousImage = () => {
     const previous = currentIndex > 0 ? currentIndex - 1 : 0;
@@ -26,13 +26,11 @@ const Carousel = ({images, autoPlay}) => {
   return (
     <div className="carousel-container">
       {autoPlay ? (
-        <div>
-          <img src={images[currentIndex]} />
-        </div>
+        <img src={images[currentIndex]} alt='carousel-img' />
       ) : (
         <div>
           {currentIndex > 0 && <div className="left-arrow arrows" onClick={goToPreviousImage}>&#x2039;</div>}
-          <img src={images[currentIndex]} />
+          <img src={images[currentIndex]} alt='carousel-img' />
           {currentIndex < images.length - 1 && <div className="right-arrow arrows" onClick={goToNextImage}>&#8250;</div>}
         </div>
       )}

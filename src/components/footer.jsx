@@ -1,17 +1,17 @@
 import React from 'react'
 import '../css/footer.css'
-import logoIcon from '../assets/img/CFL-logo.png';
-import mobileLogoIcon from '../assets/img/CFL-logo_mobile.png';
+
+import {desktopLogo, mobileLogo} from '../constants/icons';
 
 const Footer = () => {
   return (
     <footer className='footer'>
       <div className='footer-logo-container'>
         <div id='footer-logo'>
-          <img src={logoIcon} />
+          <img src={desktopLogo} alt="footer-icon" />
           <span>Crating and third-party solutions</span>
         </div>
-        <img id='mobile-footer-logo' src={mobileLogoIcon} />
+        <img id='mobile-footer-logo' src={mobileLogo} alt="footer-icon" />
       </div>
       <div className='footer-links-container'>
         <div className='copyright-text'>&copy; 2023 CFL Specialty Services</div>
