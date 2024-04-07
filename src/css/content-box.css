@@ -36,14 +36,6 @@
   width: calc(100% - 40px);
 }
 
-.content-box .desktop-img {
-  display: unset;
-}
-
-.content-box .mobile-img {
-  display: none;
-}
-
 @media screen and (min-width: 1400px) {
   .content-box {
     padding: calc(5% + 40px);
@@ -72,13 +64,19 @@
   .content-box p {
     padding: 0 40px;
   }
+}
 
-  .content-box .mobile-img {
-    display: unset;
+@media screen and (max-width: 600px) {
+  .content-box {
+
+  }
+
+  .content-box h4 {
     width: calc(100% - 80px);
   }
 
-  .content-box .desktop-img {
-    display: none;
+  .content-box img {
+    width: 200px;
+    min-width: none;
   }
 }

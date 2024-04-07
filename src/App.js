@@ -1,6 +1,8 @@
 import React, {useRef} from 'react'
+import useMediaQuery from './hooks/useMediaQuery.jsx'
 import './App.css'
 import { heroCarouselImages } from './constants/hero-images'
+import { heroCarouselImagesMobile } from './constants/hero-images'
 import Navbar from './components/navbar.jsx'
 import Carousel from './components/carousel.jsx'
 import Services from './components/services.jsx'
@@ -10,6 +12,9 @@ import ContactUs from './components/contact-us.jsx'
 import Footer from './components/footer.jsx'
 
 const App = () => {
+    // You can use any @media property
+  const isMobile = useMediaQuery('(max-width: 900px)');
+
   const topRef = useRef(null)
   const servicesRef = useRef(null)
   const aboutRef = useRef(null)
@@ -22,7 +27,11 @@ const App = () => {
   return (
     <div ref={topRef}>
       <Navbar scrollToSection={scrollToRef} />
-      <Carousel images={heroCarouselImages} autoPlay={true} />
+      {isMobile ? (
+        <Carousel images={heroCarouselImagesMobile} autoPlay={true} />
+      ) : (
+        <Carousel images={heroCarouselImages} autoPlay={true} />
+      )}
       <div className='content-boxes-container'>
         <About ref={aboutRef} />
         <Services ref={servicesRef} />
@@ -35,3 +44,14 @@ const App = () => {
 }
 
 export default App;
+
+
+  // // You can use any @media property
+  // const isDesktop = useMediaQuery('(min-width: 960px)');
+
+  // return (
+  //   <div className="App">
+  //     {isDesktop ? <h1>Desktop</h1> : <h1>Mobile</h1>}
+  //     <Navbar isDesktop={isDesktop}/>
+  //   </div>
+  // );
