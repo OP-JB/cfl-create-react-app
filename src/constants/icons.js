@@ -1,7 +1,13 @@
-import desktopLogoCFL from '../assets/img/CFL-logo.png';
-import mobileLogoCFL from '../assets/img/CFL-logo_mobile.png';
+import desktopLogo from '../assets/img/CFL-logo.png';
+import mobileLogo from '../assets/img/CFL-logo_mobile.png';
 import hamburgerMenu from '../assets/img/hamburger-menu.png'
+import leftArrow from '../assets/img/arrow-left.png'
+import rightArrow from '../assets/img/arrow-right.png'
 
-export const desktopLogo = desktopLogoCFL;
-export const mobileLogo = mobileLogoCFL;
-export const hamburgerIcon = hamburgerMenu;
+export {
+  desktopLogo,
+  mobileLogo,
+  hamburgerMenu,
+  leftArrow,
+  rightArrow
+}

@@ -5,10 +5,10 @@ import {services} from '../constants/services.js'
 
 import pianoImgSrc from '../assets/img/piano.jpg';
 
-const Services = forwardRef((props, ref) => {
+const Services = forwardRef(({isMobile, ...props}, ref) => {
   return (
     <div className='services-container content-box-container' ref={ref}>
-      <ContentBox title="Services" imgSrc={pianoImgSrc}>
+      <ContentBox title="Services" imgSrc={pianoImgSrc} dir={isMobile ? 'rtl' : 'ltr'}>
         <ul>
           {services.length && services.map(({title, rows}, idx) => (
             <div key={title + String(idx)}>

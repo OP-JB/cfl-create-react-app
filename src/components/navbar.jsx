@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import '../css/navbar.css'
 
-import {desktopLogo, mobileLogo, hamburgerIcon} from '../constants/icons';
+import {desktopLogo, mobileLogo, hamburgerMenu} from '../constants/icons';
 
 const Navbar = ({scrollToSection}) => {
   const [mobileNavIsVisible, setMobileNavIsVisible] = useState(false)
@@ -38,7 +38,7 @@ const Navbar = ({scrollToSection}) => {
           <span onClick={() => scrollToSection(2)}>Contact</span>
           <span onClick={() => scrollToSection(3)}>Gallery</span>
         </div>
-        <img src={hamburgerIcon} className='mobile-nav-icon' onClick={toggleMobileNav} alt="mobile-menu" />
+        <img src={hamburgerMenu} className='mobile-nav-icon' onClick={toggleMobileNav} alt="mobile-menu" />
         {mobileNavIsVisible && (
           <div className='mobile-nav-menu'>
             <div className="mobile-nav-links-container">

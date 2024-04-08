@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import '../css/carousel.css'
+import { leftArrow, rightArrow } from '../constants/icons'
 
 const Carousel = ({images, autoPlay}) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -29,9 +30,13 @@ const Carousel = ({images, autoPlay}) => {
         <img src={images[currentIndex]} alt='carousel-img' />
       ) : (
         <div>
-          {currentIndex > 0 && <div className="left-arrow arrows" onClick={goToPreviousImage}>&#x2039;</div>}
+          {currentIndex > 0 && <div className="left-arrow arrows" onClick={goToPreviousImage}>
+            <img src={leftArrow} alt="previous image" />  
+          </div>}
           <img src={images[currentIndex]} alt='carousel-img' />
-          {currentIndex < images.length - 1 && <div className="right-arrow arrows" onClick={goToNextImage}>&#8250;</div>}
+          {currentIndex < images.length - 1 && <div className="right-arrow arrows" onClick={goToNextImage}>
+            <img src={rightArrow} alt="next image" />  
+          </div>}
         </div>
       )}
     </div>

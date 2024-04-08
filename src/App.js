@@ -12,7 +12,6 @@ import ContactUs from './components/contact-us.jsx'
 import Footer from './components/footer.jsx'
 
 const App = () => {
-    // You can use any @media property
   const isMobile = useMediaQuery('(max-width: 900px)');
 
   const topRef = useRef(null)
@@ -33,10 +32,10 @@ const App = () => {
         <Carousel images={heroCarouselImages} autoPlay={true} />
       )}
       <div className='content-boxes-container'>
-        <About ref={aboutRef} />
-        <Services ref={servicesRef} />
-        <ContactUs ref={contactRef} />
-        <Gallery scrollToTop={() => topRef.current.scrollIntoView()} ref={galleryRef} />
+        <About ref={aboutRef} isMobile={isMobile} />
+        <Services ref={servicesRef} isMobile={isMobile} />
+        <ContactUs ref={contactRef} isMobile={isMobile} />
+        <Gallery scrollToTop={() => topRef.current.scrollIntoView()} ref={galleryRef} isMobile={isMobile} />
       </div>
       <Footer />
     </div>
@@ -44,14 +43,3 @@ const App = () => {
 }
 
 export default App;
-
-
-  // // You can use any @media property
-  // const isDesktop = useMediaQuery('(min-width: 960px)');
-
-  // return (
-  //   <div className="App">
-  //     {isDesktop ? <h1>Desktop</h1> : <h1>Mobile</h1>}
-  //     <Navbar isDesktop={isDesktop}/>
-  //   </div>
-  // );

@@ -1,7 +1,7 @@
 import React, { Fragment, forwardRef, useState } from 'react'
 import '../css/gallery.css'
 import Carousel from './carousel.jsx';
-import { galleryCarouselImages } from '../constants/gallery.js';
+import { galleryCarouselImages } from '../constants/gallery';
 
 const Gallery = forwardRef(({scrollToTop}, ref) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -20,7 +20,7 @@ const Gallery = forwardRef(({scrollToTop}, ref) => {
   return (
     <div className='gallery-container' ref={ref}>
       <h4 onClick={openModal}>View Gallery</h4>
-      <img className='placeholder-img' src={galleryCarouselImages[0]} alt='gallery-img' />
+      <img className='placeholder-img' src={galleryCarouselImages[0]} alt='gallery-img' onClick={openModal} />
         {modalIsOpen && (
           <Fragment>
             <div className='modal-overlay'></div>
