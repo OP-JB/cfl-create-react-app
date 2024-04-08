@@ -42,9 +42,20 @@ nav {
 	cursor: pointer;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1140px) {
 	#logo,
-	#slogan,
+	#slogan {
+		display: none;
+	}
+	
+	#mobile-logo {
+		display: block;
+		height: 180px;
+		padding-top: 20px;
+	}
+}
+
+@media screen and (max-width: 900px) {
 	.nav-links-container {
 		display: none;
 	}
