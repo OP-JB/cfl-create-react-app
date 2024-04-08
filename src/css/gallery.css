@@ -43,6 +43,7 @@
   border: 3px solid var(--dark-blue);
   border-radius: 20px;
   max-height: 600px;
+  cursor: pointer;
 }
 
 .modal-container .arrows img {
