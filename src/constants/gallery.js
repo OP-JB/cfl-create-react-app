@@ -25,15 +25,6 @@ import galleryImage23 from '../assets/img/gallery/23.jpg'
 import galleryImage24 from '../assets/img/gallery/24.jpg'
 import galleryImage25 from '../assets/img/gallery/25.jpg'
 import galleryImage26 from '../assets/img/gallery/26.jpg'
-import galleryImage27 from '../assets/img/gallery/27.jpg'
-import galleryImage28 from '../assets/img/gallery/28.jpg'
-import galleryImage29 from '../assets/img/gallery/29.jpg'
-import galleryImage30 from '../assets/img/gallery/30.jpg'
-import galleryImage31 from '../assets/img/gallery/31.jpg'
-import galleryImage32 from '../assets/img/gallery/32.jpg'
-import galleryImage33 from '../assets/img/gallery/33.jpg'
-import galleryImage34 from '../assets/img/gallery/34.jpg'
-
 
 export const galleryCarouselImages = [
   galleryImage0,
@@ -63,12 +54,4 @@ export const galleryCarouselImages = [
   galleryImage24,
   galleryImage25,
   galleryImage26,
-  galleryImage27,
-  galleryImage28,
-  galleryImage29,
-  galleryImage30,
-  galleryImage31,
-  galleryImage32,
-  galleryImage33,
-  galleryImage34,
 ];

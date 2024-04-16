@@ -1,19 +1,19 @@
 nav {
 	background-color: var(--dark-blue);
-	height: 120px;
+	height: 100px;
 	color: #fff;
 	display: flex;
 	justify-content: space-between;
-	width: 100%;
-	align-items: center;
+	width: calc(100% - 80px);
+	align-items: flex-end;
+	padding: 20px 40px; /* set as var so you can more easily set layouts? */
 }
 
 #logo {
-	display: block;
-	height: 120px;
+	height: 100px;
+	margin-left: -10px;
 }
 
-#mobile-logo,
 .mobile-nav-menu,
 .mobile-nav-icon {
 	display: none;
@@ -24,46 +24,31 @@ nav {
 }
 
 #slogan {
-	position: absolute;
-	left: 156px;
-	top: 82px;
 	font-size: 15px;
 }
 
 .nav-links-container {
-	position: absolute;
-	right: 0;
-	top: 78px;
 	font-size: 20px;
 }
 
 .nav-links-container span {
-	margin-right: 40px;
+	margin-left: 40px;
 	cursor: pointer;
 }
 
-@media screen and (max-width: 1140px) {
-	#logo,
-	#slogan {
-		display: none;
-	}
-	
-	#mobile-logo {
-		display: block;
-		height: 180px;
-		padding-top: 20px;
-	}
-}
-
 @media screen and (max-width: 900px) {
+	nav {
+		width: calc(100% - 40px);
+		padding: 20px;
+		align-items: center;
+	}
 	.nav-links-container {
 		display: none;
 	}
 
-	#mobile-logo {
-		display: block;
-		height: 180px;
-		padding-top: 16px;
+	#logo {
+		height: 92px;
+		margin-left: -4px;
 	}
 
 	.mobile-nav-icon {
@@ -77,7 +62,7 @@ nav {
 	.mobile-nav-menu {
 		display: block;
 		position: absolute;
-		top: 124px;
+		top: 164px;
 		right: 10px;
 		background-color: var(--dark-blue);
 		border-radius: 10px;

@@ -6,14 +6,15 @@
 }
 
 .gallery-container h4 {
-  font-size: 32px;
+  font-size: 40px;
   margin-bottom: 30px;
-  border-bottom: 2px solid var(--dark-blue);
+  border-bottom: 3px solid var(--dark-blue);
 }
 
 .gallery-container h4:hover {
   cursor: pointer;
-  font-weight: 450;
+  text-shadow: 0.5px 0.5px rgba(0,0,0,0.7);
+  /* font-weight: 450; */
 }
 
 .modal-overlay {
@@ -34,16 +35,18 @@
   left: 50%;
   width: 50%;  
   opacity: 1;
-  /* bring your own prefixes */
   transform: translate(-50%, -50%);
-
 }
 
 .placeholder-img {
-  border: 3px solid var(--dark-blue);
+  border: 2px solid var(--dark-blue);
   border-radius: 20px;
   max-height: 600px;
   cursor: pointer;
+}
+
+.placeholder-img:hover {
+  box-shadow: 0.5px 0.5px rgba(0,0,0,0.7);
 }
 
 .modal-container .arrows img {

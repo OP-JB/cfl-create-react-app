@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import '../css/navbar.css'
 
-import {desktopLogo, mobileLogo, hamburgerMenu} from '../constants/icons';
+import {logo, hamburgerMenu} from '../constants/icons';
 
 const Navbar = ({scrollToSection}) => {
   const [mobileNavIsVisible, setMobileNavIsVisible] = useState(false)
@@ -16,7 +16,7 @@ const Navbar = ({scrollToSection}) => {
   }
 
   const handleResize = () => {
-    if (window.innerWidth > 800) {
+    if (window.innerWidth > 900) {
       setMobileNavIsVisible(false)
     }
   };
@@ -29,12 +29,10 @@ const Navbar = ({scrollToSection}) => {
   return (
     <div className="nav-container">
       <nav>
-        <img id="logo" src={desktopLogo} alt="nav-logo" />
-        <img id="mobile-logo" src={mobileLogo} alt="nav-logo" />
-        <span id="slogan">Crating and third-party solutions</span>
+        <img id="logo" src={logo} alt="nav-logo" />
         <div className="nav-links-container">
-          <span onClick={() => scrollToSection(0)}>Services</span>
-          <span onClick={() => scrollToSection(1)}>About</span>
+          <span onClick={() => scrollToSection(0)}>About</span>
+          <span onClick={() => scrollToSection(1)}>Services</span>
           <span onClick={() => scrollToSection(2)}>Contact</span>
           <span onClick={() => scrollToSection(3)}>Gallery</span>
         </div>
@@ -42,8 +40,8 @@ const Navbar = ({scrollToSection}) => {
         {mobileNavIsVisible && (
           <div className='mobile-nav-menu'>
             <div className="mobile-nav-links-container">
-              <span onClick={() => scrollToSectionFromMobileNav(0)}>Services</span>
-              <span onClick={() => scrollToSectionFromMobileNav(1)}>About</span>
+              <span onClick={() => scrollToSectionFromMobileNav(0)}>About</span>
+              <span onClick={() => scrollToSectionFromMobileNav(1)}>Services</span>
               <span onClick={() => scrollToSectionFromMobileNav(2)}>Contact</span>
               <span onClick={() => scrollToSectionFromMobileNav(3)}>Gallery</span>
             </div>
