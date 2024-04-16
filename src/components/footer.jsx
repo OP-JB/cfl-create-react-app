@@ -10,7 +10,7 @@ const Footer = () => {
         <img id='footer-logo' src={logo} alt="footer-icon" />
       </div>
       <div className='footer-links-container'>
-        <div className='copyright-text'>&copy; 2023 CFL Specialty Services</div>
+        <div className='copyright-text'>&copy; 2024 CFL Specialty Services</div>
       </div>
     </footer>
   )
