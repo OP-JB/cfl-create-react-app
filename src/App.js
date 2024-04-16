@@ -20,7 +20,7 @@ const App = () => {
   const contactRef = useRef(null)
   const galleryRef = useRef(null)
   
-  const scrollRefs = [servicesRef, aboutRef, contactRef, galleryRef]
+  const scrollRefs = [aboutRef, servicesRef, contactRef, galleryRef]
   const scrollToRef = (section) => scrollRefs[section].current.scrollIntoView({behavior: 'smooth'})
 
   return (
