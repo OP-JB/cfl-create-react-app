@@ -1,6 +1,6 @@
 nav {
 	background-color: var(--dark-blue);
-	height: 100px;
+	height: 92px;
 	color: #fff;
 	display: flex;
 	justify-content: space-between;
@@ -10,7 +10,7 @@ nav {
 }
 
 #logo {
-	height: 100px;
+	height: 92px;
 	margin-left: -10px;
 }
 

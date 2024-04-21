@@ -1,7 +1,7 @@
 import React, {useRef} from 'react'
 import useMediaQuery from './hooks/useMediaQuery.jsx'
 import './App.css'
-import { heroCarouselImages } from './constants/hero-images'
+import { heroCarouselImages, heroTitles } from './constants/hero-images'
 import { heroCarouselImagesMobile } from './constants/hero-images'
 import Navbar from './components/navbar.jsx'
 import Carousel from './components/carousel.jsx'
@@ -27,9 +27,9 @@ const App = () => {
     <div ref={topRef}>
       <Navbar scrollToSection={scrollToRef} />
       {isMobile ? (
-        <Carousel images={heroCarouselImagesMobile} autoPlay={true} />
+        <Carousel images={heroCarouselImagesMobile} autoPlay={true} text={heroTitles} />
       ) : (
-        <Carousel images={heroCarouselImages} autoPlay={true} />
+        <Carousel images={heroCarouselImages} autoPlay={true} text={heroTitles} />
       )}
       <div className='content-boxes-container'>
         <About ref={aboutRef} isMobile={isMobile} />

@@ -9,10 +9,9 @@ const cssOverride = {
 };
 
 
-const Carousel = ({images, autoPlay, setCloseButtonState}) => {
+const Carousel = ({images, autoPlay, text, setCloseButtonState}) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [loading, setLoading] = useState(false);
-  const [spinnerColor, setSpinnerColor] = useState("#ffffff");
 
   useEffect(() => {
     if(autoPlay) {
@@ -42,7 +41,10 @@ const Carousel = ({images, autoPlay, setCloseButtonState}) => {
   return (
     <div className="carousel-container">
       {autoPlay ? (
-        <img src={images[currentIndex]} alt='carousel-img' />
+        <div>
+          <img src={images[currentIndex]} alt='carousel-img' />
+          <h1 className={`carousel-img-${currentIndex}`}>{text[currentIndex]}</h1>
+        </div>
       ) : !loading ? (
         <div>
           {currentIndex > 0 && <div className="left-arrow arrows" onClick={goToPreviousImage}>
@@ -55,7 +57,7 @@ const Carousel = ({images, autoPlay, setCloseButtonState}) => {
         </div>
         ) : (
           <ClipLoader
-            color={spinnerColor}
+            color="#FFFFFF"
             loading={loading}
             cssOverride={cssOverride}
             size={150}
