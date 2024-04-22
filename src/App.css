@@ -21,6 +21,8 @@
   --beige: #ebe8d7;
   --light-beige: #f8f7f3;
   --white: #fffffe;
+
+  /* create vars for media query widths */
 }
 
 body, html {
@@ -47,7 +49,7 @@ body, html {
   background-color: var(--beige);
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 900px) {
   body, html {
     overflow-x: hidden;
   }

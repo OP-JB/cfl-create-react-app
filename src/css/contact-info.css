@@ -13,7 +13,7 @@
   text-align: center;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 900px) {
   .contact-info {
     margin-top: 0;
     margin-bottom: 40px;

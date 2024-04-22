@@ -41,7 +41,7 @@
 
 @media screen and (min-width: 1400px) {
   .content-box {
-    padding: calc(5% + 40px);
+    padding: calc(2% + 40px);
   }
 }
 

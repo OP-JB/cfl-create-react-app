@@ -4,9 +4,9 @@ import heroImage3 from '../assets/img/motorcycle.png';
 import heroImage4 from '../assets/img/piano.png';
 
 import heroImageMobile1 from '../assets/img/glass-metal_mobile.png';
-import heroImageMobile4 from '../assets/img/chandelier_mobile.png';
-import heroImageMobile2 from '../assets/img/motorcycle_mobile.png';
-import heroImageMobile3 from '../assets/img/piano_mobile.png';
+import heroImageMobile2 from '../assets/img/chandelier_mobile.png';
+import heroImageMobile3 from '../assets/img/motorcycle_mobile.png';
+import heroImageMobile4 from '../assets/img/piano_mobile.png';
 
 export const heroTitles = ['On-site Custom Crating', 'On-site Custom Crating', 'Specialty Services', 'Specialty Services']
 
