@@ -62,7 +62,7 @@ nav {
 	.mobile-nav-menu {
 		display: block;
 		position: absolute;
-		top: 164px;
+		top: 140px;
 		right: 10px;
 		background-color: var(--dark-blue);
 		border-radius: 10px;
